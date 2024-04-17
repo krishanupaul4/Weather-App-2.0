@@ -1,0 +1,286 @@
+*{
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Sans-Serif;
+}
+
+/*<------------Navbar content---------------->*/
+
+.container{
+    height:auto;
+    width:100%;
+    background-color: azure;
+}
+
+.navb{
+    height:60px;
+    width:100%;
+    align-items: center;
+    background-color:rgb(25, 52, 103);
+    display: flex;
+    justify-content: space-evenly;
+}
+.weatherpedia{
+    font-size:30px;
+    font-weight: 700;
+    color:azure;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.search{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+#innav{
+    height:35px;
+    width:80%;
+    border-radius: 20px;
+    text-align: center;
+    outline:none;
+}
+.search i{
+    margin-left:-34px;
+    font-size: 16px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgb(130, 125, 125);
+    padding: 10px;
+    cursor: pointer;
+}
+.navloc{
+    color:azure;
+    cursor: pointer;
+}
+.tempnav{
+    color:azure;
+    cursor: pointer;
+}
+
+/*<------------Cuttent Weather Dashboard--------------->*/
+
+.dashboards{
+    display:flex;
+    flex-direction:column;
+    margin:35px;
+}
+.cweather{
+    padding-left: 40px;
+    height:400px;
+    width:auto;
+    align-items: left;
+    margin-top: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    overflow: scroll;
+}
+.cweather::-webkit-scrollbar{
+    width:0;
+}
+.row2{
+    display: flex;
+    justify-content: center;
+}
+.row2-1{
+    display: flex;
+    flex-direction: column;
+    padding-left:30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.row2 img{
+    height:100px;
+    width:100px;
+}
+.row3{
+    width:auto;
+    height:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.temp1{
+    font-size:70px;
+}
+.currentweather{
+    font-size:20px;
+    font-weight: 700;
+}
+.r0w3-1{
+    text-align:center;
+    cursor:pointer;
+}
+.j:hover{
+    text-decoration:underline;
+}
+
+/*<------------ 5 DAY FORECAST Dashboard--------------->*/
+
+.cweather2{
+    padding-left: 30px;
+    height:450px;
+    width:auto;
+    align-items: left;
+    margin-top: 10px;
+    
+    padding-bottom: 10px;
+    
+}
+
+.box1 img{
+    height:40px;
+    width:40px;
+}
+.box{
+    display: flex;
+    overflow:scroll;
+    position: relative;
+    margin-right: 30px;
+}
+
+/*<------------ TODAY FORECAST Dashboard--------------->*/
+
+.cweather2 h3{
+    margin-bottom:5px;
+    width:50%;
+}
+
+.box2{
+    display: flex;
+    overflow:scroll;
+    position: relative;
+    margin-right: 30px;
+}
+
+.footer{
+    border-top: 2px solid black;
+    height:100px;
+    width:100%;
+    text-align: center;
+    color:white;
+    background:rgb(25, 52, 103);
+    font-size:20px;
+}
+.flink{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+@media(max-width:480px){
+
+    .navb{
+        height:150px;
+        width:100%;
+        align-items: center;
+        background-color:rgb(25, 52, 103);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+   
+   
+   
+   .search{
+    width:250px;
+   }
+   .search i{
+    padding:12px;
+    font-size: 20px;;
+
+   }
+   #innav{
+    height:45px;
+    width:90%;
+    border-radius: 20px;
+    text-align: center;
+    outline:none;
+     }
+
+    .weatherpedia{
+        font-size:25px;
+        font-weight: 700;
+        color:azure;
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+
+  
+ 
+ 
+  
+  
+    .row1{
+        font-size:20px;
+    }
+    .row2 img{
+        height:60px;
+        width:60px;
+        
+    }
+    .currentweather{
+        font-size:15px;
+        font-weight: 700;
+    }
+    .temp1{
+        font-size:30px;
+    }
+    .row3{
+        font-size: 16px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .r0w3-1{
+        margin: 10px;
+    }
+
+    .cweather{
+        padding-left: 0px;
+        height:400px;
+        width:auto;
+        align-items: left;
+        margin-top: 5px;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+        overflow: scroll;
+    }
+ 
+    .uvdes{
+        display:none;
+    }
+    .box2{
+        display: flex;
+        overflow:scroll;
+        position: relative;
+        margin-right: 0px;
+    }
+    .box{
+        display: flex;
+        overflow:scroll;
+        position: relative;
+        margin-right: 0px;
+    }
+    .cweather2{
+        padding-left: 0px;
+        height:450px;
+        width:auto;
+        align-items: left;
+        margin-top: 10px;
+        
+        padding-bottom: 10px;
+        
+    }
+  
+}
